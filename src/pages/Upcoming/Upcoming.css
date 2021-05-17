@@ -1,0 +1,23 @@
+.upcoming-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem;
+}
+.wrap-img {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 155px;
+}
+.wrap-img img {
+  width: 100%;
+}
+.upcoming-text {
+  font-family: 'Montserrat-Bold';
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 1rem;
+  z-index: 3;
+}

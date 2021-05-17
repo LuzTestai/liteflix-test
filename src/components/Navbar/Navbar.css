@@ -1,0 +1,47 @@
+.navbar-wrap {
+  display: flex;
+  justify-content: space-between !important;
+  width: 100%;
+  background-color: transparent;
+  z-index: 3;
+  position: absolute;
+  top: '0';
+  left: '0';
+  right: '0';
+  padding: 1rem 5rem;
+}
+.active-link {
+  font-weight: bold;
+}
+.navbar-brand {
+  padding-bottom: 0;
+}
+.nav-link {
+  color: #fff;
+  padding-bottom: 0 !important;
+}
+
+.active.navbar-letter {
+  font-weight: 900;
+}
+.navbar-nav {
+  align-items: flex-end;
+}
+.circle-add-list {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 15px;
+  padding: 13px 12.1px 12px 12px;
+  background-color: #ff0000;
+  border-radius: 2rem;
+}
+
+.navbar-letter {
+  font-family: 'Montserrat-Regular';
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  font-size: 14px;
+}

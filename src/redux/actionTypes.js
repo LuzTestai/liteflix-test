@@ -1,0 +1,3 @@
+export const SET_OUTSTANDING = "SET_OUTSTANDING";
+export const SET_UPCOMING = "SET_UPCOMING";
+export const SET_POPULAR = "SET_POPULAR";

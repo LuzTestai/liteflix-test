@@ -6,8 +6,7 @@ import Testt from './Testt'
 
 const ModalDowland = ({ children }) => {
   const [images, setImages] = useState([])
-  const [pepe, setPepe] = useState([false])
-  console.log('soy imagen', images)
+  const [showModal, setShowModal] = useState(false)
 
   const onChange = (imageList, addUpdateIndex) => {
     // data for submit
@@ -15,7 +14,7 @@ const ModalDowland = ({ children }) => {
     setImages(imageList)
   }
 
-  const [showModal, setShowModal] = useState(true)
+ 
 
   return showModal ? (
     <div class="modal-custom">
@@ -37,7 +36,7 @@ const ModalDowland = ({ children }) => {
               dragProps,
             }) =>
               // write your building UI
-              pepe ? (
+           (
                 <div
                   style={isDragging ? { color: 'red' } : null}
                   onClick={onImageUpload}
@@ -57,8 +56,6 @@ const ModalDowland = ({ children }) => {
                     </div>
                   ))}
                 </div>
-              ) : (
-                <div class="container-attach-file"></div>
               )
             }
           </ImageUploading>

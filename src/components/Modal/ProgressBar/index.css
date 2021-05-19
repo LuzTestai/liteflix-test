@@ -1,0 +1,25 @@
+.container-progress-bar {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 7rem;
+  text-align: center;
+  justify-content: center;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: solid 1.5px #9b9b9b;
+  background-color: #dedede;
+  border-style: dashed;
+  margin: auto;
+  align-items: center;
+}
+
+.title-cancel {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-add {
+  width: 100%;
+}

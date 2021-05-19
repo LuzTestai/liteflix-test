@@ -2,41 +2,34 @@ import { useState } from 'react'
 import './Modal.css'
 import svgAttach from '../../assets/svg/clip.svg'
 import ImageUploading from 'react-images-uploading'
-import Testt from './Testt'
+import ProgressBar from './ProgressBar'
 
 const ModalDowland = ({ children }) => {
   const [images, setImages] = useState([])
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(true)
+  const [showProgressBar, setShowProgressBar] = useState(false)
 
   const onChange = (imageList, addUpdateIndex) => {
+    setShowProgressBar(true)
     // data for submit
     console.log(imageList, addUpdateIndex)
     setImages(imageList)
   }
-
- 
 
   return showModal ? (
     <div class="modal-custom">
       <div class="wrap-modal">
         <div class="content-inputs">
           <div class="cross">x</div>
-          <Testt />
-
-          <ImageUploading
-            value={images}
-            onChange={onChange}
-            dataURLKey="data_url"
-          >
-            {({
-              imageList,
-              onImageUpload,
-              onImageRemove,
-              isDragging,
-              dragProps,
-            }) =>
-              // write your building UI
-           (
+          {showProgressBar ? (
+            <ProgressBar showProgressBar={showProgressBar} />
+          ) : (
+            <ImageUploading
+              value={images}
+              onChange={onChange}
+              dataURLKey="data_url"
+            >
+              {({ onImageUpload, isDragging, dragProps }) => (
                 <div
                   style={isDragging ? { color: 'red' } : null}
                   onClick={onImageUpload}
@@ -48,17 +41,17 @@ const ModalDowland = ({ children }) => {
                     Agregar Archivo <span>o arrastrarlo y soltarlo aquí</span>
                   </p>
                   &nbsp;
-                  {imageList.map((image, index) => (
+                  {/* {imageList.map((image, index) => (
                     <div key={index} className="image-item">
                       <div className="image-item__btn-wrapper">
                         <button onClick={() => onImageRemove(index)}>-</button>
                       </div>
                     </div>
-                  ))}
+                  ))} */}
                 </div>
-              )
-            }
-          </ImageUploading>
+              )}
+            </ImageUploading>
+          )}
 
           <div class="container-input">
             <div class="col-6">

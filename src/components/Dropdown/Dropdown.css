@@ -6,56 +6,56 @@
 }
 .triangle-white {
   position: absolute;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 25px solid #fff;
-  font-size: 0px;
-  line-height: 0px;
-  right: 7px;
-  top: 42px;
+  border-left: 1.6rem solid transparent;
+  border-right: 1.6rem solid transparent;
+  border-bottom: 1.6rem solid #fff;
+  font-size: 0rem;
+  line-height: 0rem;
+  right: 0.4rem;
+  top: 2.6rem;
   transform: rotate(-315deg);
-  border-radius: 5px;
+  border-radius: 0.3rem;
   background-color: var(--white);
 }
 .menu {
   background-color: white;
   position: absolute;
-  top: 40px;
-  right: 4px;
-  padding: 11px 9px 11px 10px;
+  top: 2.5rem;
+  right: 0.25rem;
+  padding: 0.7rem 0.6rem 0.7rem 0.625;
   border-radius: 5px;
 }
 .fill-user {
-  width: 13.3px;
-  height: 15px;
+  width: 0.8rem;
+  height: 0.9rem;
   object-fit: contain;
   background-color: #f5a623;
 }
 .container-user {
   display: flex;
-  width: 111px;
-  height: 37px;
-  padding: 7px 7px 7px 8px;
+  width: 6.9rem;
+  height: 2.3rem;
+  padding: 0.4rem 0.4rem 0.4rem 0.5rem;
 }
 .container-user:hover,
 .container-user:focus,
 .container-user:active {
-  border-radius: 18.5px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 1.15rem;
+  box-shadow: 0 0 0.625rem 0 rgba(0, 0, 0, 0.1);
   background-color: var(--white);
 }
 .active {
-  border-radius: 18.5px;
+  border-radius: 1.1rem;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--white);
 }
 
 .user-name {
   font-family: 'Montserrat-Regular';
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: normal;
   letter-spacing: normal;
-  margin: 4px;
+  margin: 0.25rem;
   overflow: hidden;
   display: inline-block;
   text-align: center;
@@ -73,19 +73,19 @@
 }
 
 .container-options {
-  margin: 5.5px 0 0;
-  padding: 11px 9px 5px 10px;
+  margin: 0.3rem 0 0;
+  padding: 0.7rem 0.56rem 0.3rem 0.625rem;
   border-radius: 5px;
-  border-bottom: solid 1px #cccccc;
+  border-bottom: solid 0.063rem #cccccc;
 }
 .container-options p {
   font-family: 'Montserrat-Regular';
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-bottom: 0;
 }
 .container-options-strong p {
   font-family: 'Montserrat-Regular';
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-bottom: 0;
   font-weight: bold;
 }

@@ -3,9 +3,9 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 1px 70px;
-  border-radius: 10px;
-  border: solid 1.5px #9b9b9b;
+  padding: 0.063rem 4.37rem;
+  border-radius: 0.625rem;
+  border: solid 0.094rem #9b9b9b;
   background-color: var(--white);
   border-style: dashed;
   margin: auto;
@@ -30,18 +30,21 @@
 
 .content-inputs {
   background-color: #fff;
-  width: 730px;
-  height: 354px;
+  width: 45.6rem;
+  height: 22.1rem;
   opacity: 1;
   z-index: 5;
-  padding: 5px 25px;
-  border-radius: 10px;
+  padding: 0.3rem 1.6rem;
+  border-radius: 0.625rem;
 }
 
 .cross {
   text-align: end;
-  padding: 5px;
+  padding: 0.3rem;
   font-weight: bold;
+}
+.cross:hover {
+  cursor: pointer;
 }
 
 .text-dowland {
@@ -69,8 +72,7 @@
   font-family: 'Montserrat-Regular';
   width: 100%;
   border: none;
-  border-bottom: solid 1px #000000;
-  /* border-bottom: solid 1px #0076ff; */
+  border-bottom: solid 0.063rem #000000;
 }
 
 .input-info:hover,
@@ -79,26 +81,81 @@
 .input-info:active {
   border: none;
   box-shadow: none;
-  border-bottom: solid 1px #0076ff;
+  border-bottom: solid 0.063rem #0076ff;
   outline: none;
 }
 
 .container-input label {
   font-family: 'Montserrat-Medium';
   line-height: normal;
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
   color: #9b9b9b;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .modal-btn {
   font-family: 'Montserrat-Regular';
-  padding: 20px 114px 20px 115px;
-  border-radius: 35px;
-  background-color: #dedede;
+  padding: 1.25rem 7.1rem 1.25rem 7.2rem;
+  border-radius: 2.2rem;
   border: none;
   box-shadow: none;
   color: #fff;
   margin-top: 0.5rem;
+}
+.modal-btn:focus-visible,
+.modal-btn:focus {
+  outline: none;
+}
+.enabled-btn:hover {
+  transform: scale(1.2);
+}
+
+.disables-btn {
+  background-color: #dedede;
+}
+.enabled-btn {
+  background-color: #000;
+  transition: transform 0.1s;
+}
+.enabled-btn:hover {
+  transform: scale(1.1);
+}
+.content-congratulations {
+  background-color: #7ed321;
+  width: 45.6rem;
+  height: 22.1rem;
+  opacity: 1;
+  z-index: 5;
+  padding: 0.75rem 1.125rem 1.68rem 2.18rem;
+  border-radius: 0.625rem;
+}
+
+.content-congratulations h1 {
+  font-family: 'Montserrat-Bold';
+  font-size: 2rem;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.content-congratulations p {
+  font-family: 'Montserrat-Regular';
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.wrap-text-congratulations {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0rem;
+}
+.wrap-text-congratulations strong {
+  text-transform: capitalize;
+}
+
+.btn-close {
+  padding: 1.62rem 4.5rem;
 }

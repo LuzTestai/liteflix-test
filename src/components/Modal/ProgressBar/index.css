@@ -4,22 +4,35 @@
   width: 90%;
   height: 7rem;
   text-align: center;
-  justify-content: center;
-  padding: 14px 20px;
-  border-radius: 10px;
-  border: solid 1.5px #9b9b9b;
-  background-color: #dedede;
+  padding: 0.875rem 1.25rem;
+  border-radius: 0.625rem;
+  border: solid 0.094rem #f3f3f3;
+  background-color: #f3f3f3;
   border-style: dashed;
   margin: auto;
-  align-items: center;
+  align-items: flex-start;
+}
+.container-progress-bar:hover {
+  cursor: pointer;
+  background-color: #dcd9d9;
+}
+.progress-bar {
+  background-color: #7ed321;
 }
 
 .title-cancel {
-  text-transform: uppercase;
+  font-family: 'Montserrat-Regular';
+  font-weight: bold;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin: auto;
+  text-transform: uppercase;
 }
 
 .progress-bar-add {
   width: 100%;
+}
+.title-loading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Montserrat-Regular';
 }

@@ -1,24 +1,14 @@
-.popular-wrap {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 5rem;
-}
-.wrap-img {
-  display: flex;
-  width: 100%;
-  margin: auto;
-  height: auto;
-}
-.wrap-img img {
-  width: 100%;
-}
 .popular-text {
   font-family: 'Montserrat-Bold';
   line-height: normal;
   letter-spacing: normal;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   z-index: 3;
   text-transform: uppercase;
+}
+
+.popular-row {
+  height: 25rem;
 }

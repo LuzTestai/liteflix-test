@@ -7,13 +7,13 @@ export const Outstanding = () => {
     <div className="outstanding-wrap">
       <div class="outstanding-content">
         <div class="row d-flex flex-column align-items-start">
-          <div class="col-5">
+          <div class="col-md-5 col-12">
             <h1 class="original-liteflix">
               Original de <span>Literflix</span>
             </h1>
             <h2 class="title-outstanding">Kids at school</h2>
             <div class="row">
-              <div class="col-10 d-flex justify-content-around mt-3">
+              <div class="col-md-10 col-12 d-flex justify-content-around mt-3">
                 <button class="outstanding-btn">
                   <img src={svgPlay} alt="play" />
                   <p>Reproducir</p>

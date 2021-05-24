@@ -21,3 +21,38 @@
   src: local('RobotoSlab-Bold'),
     url(./assets/fonts/RobotoSlab-Bold.ttf) format('truetype');
 }
+
+.wrap-movies {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem;
+  align-items: flex-start;
+}
+.wrap-img {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.wrap-img img {
+  width: 100%;
+  transition: transform 0.4s;
+  object-fit: cover;
+}
+.wrap-img img:hover {
+  transform: scale(1.2);
+}
+
+.wrap-movies-row {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.wrap-movies-row::-webkit-scrollbar {
+  display: none;
+}

@@ -5,13 +5,15 @@ import { getOutstanding, getUpcoming, getPopular } from '../../redux/actions'
 import { Outstanding } from '../Outstanding/Outstanding'
 import { Upcoming } from '../Upcoming/Upcoming'
 import { Popular } from '../Popular/Popular'
+import { MyList } from '../../components/MyList/MyList'
 
 const Home = () => {
+  const { myList } = useSelector((state) => state.myList)
   const dispatch = useDispatch()
   const { outstanding, upcoming, popular } = useSelector(
     (state) => state.movies,
   )
-
+  console.log('myList', myList)
   useEffect(() => {
     const setComments = async () => {
       try {
@@ -34,6 +36,8 @@ const Home = () => {
         }}
       />
       <Outstanding />
+      {myList.length > 0 ? <MyList myList={myList} /> : null}
+
       <Upcoming upcoming={upcoming} />
       <Popular popular={popular} />
     </div>

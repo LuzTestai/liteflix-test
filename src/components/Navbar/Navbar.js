@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import Dropdown from '../Dropdown/Dropdown'
 import Liteflix from '../../assets/svg/liteflix.svg'
@@ -7,10 +7,11 @@ import svgBell from '../../assets/svg/bell.svg'
 import Modal from '../../components/Modal/Modal'
 
 const Navbar = () => {
+  const [showModal, setShowModal] = useState(false)
   return (
     <div>
-      <Modal />
-      <nav className="navbar-expand-lg navbar-wrap">
+      <Modal showModal={showModal} setShowModal={setShowModal} />
+      <nav className="navbar-expand-lg navbar-wrap navbar-mobile">
         <div className="d-flex align-items-center">
           <div class="d-flex align-items-end">
             <img className="mr-2" src={Liteflix} alt="logo" />
@@ -42,8 +43,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div class="circle-add-list">
+          <div class="circle-add-list" onClick={() => setShowModal(true)}>
             <img src={svgPlus} alt="add" />
+            <div class="add-movie-btn">Agregar pelicula</div>
           </div>
         </div>
 

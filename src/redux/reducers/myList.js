@@ -10,7 +10,7 @@ export default (state = inicialState, action) => {
     case SET_MY_MOVIE:
       return {
         ...state,
-        myList: action.payload,
+        myList: [...state.myList, action.payload],
       }
     default:
       return state

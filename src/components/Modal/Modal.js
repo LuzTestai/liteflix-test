@@ -71,10 +71,7 @@ const ModalDowland = ({ showModal, setShowModal }) => {
               x
             </div>
             {showProgressBar ? (
-              <ProgressBar
-                showProgressBar={showProgressBar}
-                setShowProgressBar={setShowProgressBar}
-              />
+              <ProgressBar setShowProgressBar={setShowProgressBar} />
             ) : (
               <ImageUploading
                 value={image}
